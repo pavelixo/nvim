@@ -6,7 +6,14 @@ return {
 
   -- == Examples of Adding Plugins ==
 
-  "andweeb/presence.nvim",
+  {
+    "andweeb/presence.nvim",
+    config = function()
+      require("presence").setup {
+        main_image = "file",
+      }
+    end,
+  },
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
