@@ -3,9 +3,9 @@
 
 ---@type LazySpec
 return {
-
+  "tpope/vim-fugitive",
+  
   -- == Examples of Adding Plugins ==
-
   {
     "andweeb/presence.nvim",
     config = function()
